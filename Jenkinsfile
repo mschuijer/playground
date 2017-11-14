@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'maven-jdk-8'
-    }
-    
-  }
+  agent any
   stages {
     stage('Preparation') {
       steps {
